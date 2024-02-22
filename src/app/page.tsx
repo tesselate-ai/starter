@@ -1,3 +1,9 @@
+import { HelloWorld } from "@/components/HelloWorld";
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <HelloWorld />
+    </main>
+  );
 }
