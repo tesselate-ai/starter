@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "preinstall": "asdf install",
     "postinstall": "poetry install --sync",
     "flask-dev": "FLASK_DEBUG=1 poetry run python -m flask --app api.index run -p 5328",
     "next-dev": "next dev",
