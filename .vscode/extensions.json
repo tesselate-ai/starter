@@ -1,6 +1,12 @@
 {
   "recommendations": [
+    // Python dev tools.
+    "ms-python.python",
+    // Auto-sort imports on save.
+    "ms-python.isort",
     // Normalize IDE format settings.
     "editorconfig.editorconfig",
+    // TOML editing
+    "tamasfe.even-better-toml",
   ]
 }
