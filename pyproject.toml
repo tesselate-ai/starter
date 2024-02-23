@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nextjs-starter"
+version = "0.1.0"
+description = "tesselate.ai python backend template"
+authors = ["tesselate developers <dev@tesselate.ai>"]
+readme = "README.md"
+packages = [{ include = "api", from = "src" }]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
