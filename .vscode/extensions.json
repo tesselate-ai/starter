@@ -1,0 +1,6 @@
+{
+  "recommendations": [
+    // Normalize IDE format settings.
+    "editorconfig.editorconfig",
+  ]
+}
