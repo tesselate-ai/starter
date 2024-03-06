@@ -18,28 +18,41 @@ src/                # Main source directory
  |.... components   # Frontend components
 ```
 
-## Installation and running
+## Setting up a new project
 
-The first thing you should Clone the template using `degit`:
+1. Clone the template using `degit`:
 
-```bash
-pnpx degit tesselate-ai/nextjs-starter <your-project-name>
-```
+    ```bash
+    pnpx degit tesselate-ai/nextjs-starter <project-name>
+    ```
 
-Update the information in `package.json` and `pyproject.toml` to match your project name.
+2. Update the information in `package.json` and `pyproject.toml` to match the new project's name.
 
-Install all dependencies:
+## Tooling pre-requisites
 
-```bash
-# Install all the tooling (node+pnpm, python+poetry)
+- [asdf](https://asdf-vm.com) with plugins:
+    - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
+    - [pnpm](https://github.com/jonathanmorley/asdf-pnpm)
+    - [python](https://github.com/asdf-community/asdf-python)
+    - [poetry](https://github.com/asdf-community/asdf-poetry)
+
+```sh
+# Install the runtimes and tooling
 asdf install
 
-# Install frontend dependencies
-pnpm install
-
-# Install backend dependencies
-poetry install --sync
+# If there are any missing plugin errors, install with:
+asdf plugin add <plugins>
 ```
+
+## Installation and running
+
+```bash
+# Install dependencies
+pnpm install
+```
+
+> **Note**: Backend dependencies are installed automatically when running `pnpm install`.
+> To install backend dependencies manually, run `poetry install --sync`
 
 Run the project:
 
